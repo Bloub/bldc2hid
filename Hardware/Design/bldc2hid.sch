@@ -16,23 +16,23 @@ $EndDescr
 $Comp
 L Amplifier_Operational:LT1492 U1
 U 1 1 6038B18C
-P 7400 1750
-F 0 "U1" H 7400 2117 50  0000 C CNN
-F 1 "LT1492" H 7400 2026 50  0000 C CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 7400 1750 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/14923f.pdf" H 7400 1750 50  0001 C CNN
-	1    7400 1750
+P 7300 2000
+F 0 "U1" H 7300 2367 50  0000 C CNN
+F 1 "LT1492" H 7300 2276 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 7300 2000 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/14923f.pdf" H 7300 2000 50  0001 C CNN
+	1    7300 2000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Amplifier_Operational:LT1492 U1
 U 2 1 6038DDF5
-P 7400 2450
-F 0 "U1" H 7400 2817 50  0000 C CNN
-F 1 "LT1492" H 7400 2726 50  0000 C CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 7400 2450 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/14923f.pdf" H 7400 2450 50  0001 C CNN
-	2    7400 2450
+P 7300 2600
+F 0 "U1" H 7300 2967 50  0000 C CNN
+F 1 "LT1492" H 7300 2876 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 7300 2600 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/14923f.pdf" H 7300 2600 50  0001 C CNN
+	2    7300 2600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -97,57 +97,10 @@ Wire Wire Line
 Wire Wire Line
 	5400 2450 5400 2400
 Connection ~ 5400 2400
-$Comp
-L Device:R_POT RV1
-U 1 1 603A1EC1
-P 6700 1850
-F 0 "RV1" H 6631 1896 50  0000 R CNN
-F 1 "R_POT" H 6631 1805 50  0000 R CNN
-F 2 "Potentiometer_SMD:Potentiometer_ACP_CA6-VSMD_Vertical" H 6700 1850 50  0001 C CNN
-F 3 "~" H 6700 1850 50  0001 C CNN
-	1    6700 1850
-	1    0    0    -1  
-$EndComp
-Text GLabel 7050 1650 0    50   Input ~ 0
+Text GLabel 6500 1550 0    50   Input ~ 0
 L1
-Text GLabel 7050 2350 0    50   Input ~ 0
-L1
-Text GLabel 7050 2550 0    50   Input ~ 0
+Text GLabel 6500 2150 0    50   Input ~ 0
 L2
-Wire Wire Line
-	7050 1650 7100 1650
-Wire Wire Line
-	7050 2350 7100 2350
-Wire Wire Line
-	7050 2550 7100 2550
-$Comp
-L power:+5V #PWR0103
-U 1 1 603A42CD
-P 6700 1650
-F 0 "#PWR0103" H 6700 1500 50  0001 C CNN
-F 1 "+5V" H 6715 1823 50  0000 C CNN
-F 2 "" H 6700 1650 50  0001 C CNN
-F 3 "" H 6700 1650 50  0001 C CNN
-	1    6700 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0104
-U 1 1 603A446D
-P 6700 2050
-F 0 "#PWR0104" H 6700 1800 50  0001 C CNN
-F 1 "GND" H 6705 1877 50  0000 C CNN
-F 2 "" H 6700 2050 50  0001 C CNN
-F 3 "" H 6700 2050 50  0001 C CNN
-	1    6700 2050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6700 1650 6700 1700
-Wire Wire Line
-	6700 2000 6700 2050
-Wire Wire Line
-	6850 1850 7100 1850
 $Comp
 L Connector:Conn_01x03_Female J1
 U 1 1 603A5C12
@@ -207,46 +160,25 @@ Wire Wire Line
 	1350 1000 1550 1000
 Wire Wire Line
 	1550 1000 1550 1050
-Text GLabel 1550 2400 2    50   Output ~ 0
+Text GLabel 1350 2500 2    50   Output ~ 0
 L1
-Text GLabel 1550 2500 2    50   Output ~ 0
+Text GLabel 1350 2600 2    50   Output ~ 0
 L2
-Text GLabel 7750 1750 2    50   Output ~ 0
+Text GLabel 7650 2000 2    50   Output ~ 0
 Threshold
-Text GLabel 7750 2450 2    50   Output ~ 0
+Text GLabel 7650 2600 2    50   Output ~ 0
 Direction
 Wire Wire Line
-	1350 2400 1550 2400
+	7600 2600 7650 2600
 Wire Wire Line
-	1350 2500 1550 2500
-Wire Wire Line
-	7700 2450 7750 2450
-Wire Wire Line
-	7700 1750 7750 1750
-Text Label 6850 1850 0    50   ~ 0
-Level
+	7600 2000 7650 2000
 $Comp
-L power:GND #PWR0107
-U 1 1 603C9D3A
-P 1550 2650
-F 0 "#PWR0107" H 1550 2400 50  0001 C CNN
-F 1 "GND" H 1555 2477 50  0000 C CNN
-F 2 "" H 1550 2650 50  0001 C CNN
-F 3 "" H 1550 2650 50  0001 C CNN
-	1    1550 2650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1550 2600 1550 2650
-Wire Wire Line
-	1350 2600 1550 2600
-$Comp
-L Connector:Conn_01x03_Female J3
+L Connector:Conn_01x04_Female J3
 U 1 1 603CCFF6
 P 1150 2500
 F 0 "J3" H 1042 2785 50  0000 C CNN
-F 1 "Conn_01x03_Female" H 1042 2694 50  0001 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" H 1150 2500 50  0001 C CNN
+F 1 "Conn_01x04_Female" H 1042 2694 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical" H 1150 2500 50  0001 C CNN
 F 3 "~" H 1150 2500 50  0001 C CNN
 	1    1150 2500
 	-1   0    0    -1  
@@ -272,7 +204,7 @@ L Device:R R3
 U 1 1 6040F6AC
 P 5700 4300
 F 0 "R3" H 5770 4346 50  0000 L CNN
-F 1 "R" H 5770 4255 50  0000 L CNN
+F 1 "22M" H 5770 4255 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 5630 4300 50  0001 C CNN
 F 3 "~" H 5700 4300 50  0001 C CNN
 	1    5700 4300
@@ -297,7 +229,7 @@ U 1 1 604108B0
 P 5450 4500
 F 0 "J4" H 5342 4367 50  0000 C CNN
 F 1 "Conn_01x01_Female" V 5387 4548 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5450 4500 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x01_P1.27mm_Horizontal" H 5450 4500 50  0001 C CNN
 F 3 "~" H 5450 4500 50  0001 C CNN
 	1    5450 4500
 	-1   0    0    1   
@@ -450,14 +382,10 @@ Wire Notes Line
 	4750 3650 4750 5500
 Text Notes 4850 3800 0    50   ~ 0
 Capacitive sensing
-Text Notes 5300 1300 0    50   ~ 0
+Text Notes 5000 1250 0    50   ~ 0
 BLDC rotation detection
 Wire Notes Line
-	4950 1150 4950 2800
-Wire Notes Line
-	4950 2800 8300 2800
-Wire Notes Line
-	8300 2800 8300 1150
+	4950 3300 8300 3300
 Wire Notes Line
 	8300 1150 4950 1150
 $Comp
@@ -471,4 +399,161 @@ F 3 "~" H 1150 1700 50  0001 C CNN
 	1    1150 1700
 	-1   0    0    -1  
 $EndComp
+Text GLabel 1350 2700 2    50   Output Italic 0
+L3
+$Comp
+L Device:R R4
+U 1 1 60524929
+P 6650 1550
+F 0 "R4" V 6443 1550 50  0001 C CNN
+F 1 "10K" V 6535 1550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6580 1550 50  0001 C CNN
+F 3 "~" H 6650 1550 50  0001 C CNN
+	1    6650 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 60525453
+P 6650 2150
+F 0 "R5" V 6443 2150 50  0001 C CNN
+F 1 "10K" V 6535 2150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6580 2150 50  0001 C CNN
+F 3 "~" H 6650 2150 50  0001 C CNN
+	1    6650 2150
+	0    1    1    0   
+$EndComp
+Text GLabel 6500 2750 0    50   Input ~ 0
+L3
+$Comp
+L Device:R R6
+U 1 1 60525D6A
+P 6650 2750
+F 0 "R6" V 6443 2750 50  0001 C CNN
+F 1 "10K" V 6535 2750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6580 2750 50  0001 C CNN
+F 3 "~" H 6650 2750 50  0001 C CNN
+	1    6650 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 605292A6
+P 6650 1700
+F 0 "C3" H 6765 1746 50  0001 L CNN
+F 1 "30n" H 6765 1655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6688 1550 50  0001 C CNN
+F 3 "~" H 6650 1700 50  0001 C CNN
+	1    6650 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 6052AD9E
+P 6650 2300
+F 0 "C4" H 6765 2346 50  0001 L CNN
+F 1 "30n" H 6765 2255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6688 2150 50  0001 C CNN
+F 3 "~" H 6650 2300 50  0001 C CNN
+	1    6650 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 6052B3F5
+P 6650 2900
+F 0 "C5" H 6765 2946 50  0001 L CNN
+F 1 "30n" H 6765 2855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6688 2750 50  0001 C CNN
+F 3 "~" H 6650 2900 50  0001 C CNN
+	1    6650 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6800 1550 6800 1700
+Wire Wire Line
+	6800 2150 6800 2300
+Wire Wire Line
+	6800 2750 6800 2900
+Wire Wire Line
+	6500 1700 6250 1700
+Wire Wire Line
+	6250 1700 6250 2300
+Wire Wire Line
+	6250 2300 6500 2300
+Wire Wire Line
+	6250 2900 6500 2900
+$Comp
+L power:GND #PWR0103
+U 1 1 605310DA
+P 6200 2300
+F 0 "#PWR0103" H 6200 2050 50  0001 C CNN
+F 1 "GND" H 6205 2127 50  0000 C CNN
+F 2 "" H 6200 2300 50  0001 C CNN
+F 3 "" H 6200 2300 50  0001 C CNN
+	1    6200 2300
+	0    1    1    0   
+$EndComp
+Connection ~ 6250 2300
+Wire Wire Line
+	6800 1700 6950 1700
+Wire Wire Line
+	6950 1700 6950 1900
+Wire Wire Line
+	6950 1900 7000 1900
+Connection ~ 6800 1700
+Wire Wire Line
+	6800 2300 6950 2300
+Wire Wire Line
+	6950 2300 6950 2100
+Wire Wire Line
+	6950 2100 7000 2100
+Connection ~ 6800 2300
+Wire Wire Line
+	6950 2300 6950 2500
+Wire Wire Line
+	6950 2500 7000 2500
+Connection ~ 6950 2300
+Wire Wire Line
+	6800 2900 6950 2900
+Wire Wire Line
+	6950 2900 6950 2700
+Wire Wire Line
+	6950 2700 7000 2700
+Connection ~ 6800 2900
+Wire Wire Line
+	6250 2300 6250 2900
+Wire Wire Line
+	6250 2300 6200 2300
+Wire Notes Line
+	4950 1150 4950 3300
+Wire Notes Line
+	8300 1150 8300 3300
+$Comp
+L power:GND #PWR0104
+U 1 1 60565036
+P 1600 2400
+F 0 "#PWR0104" H 1600 2150 50  0001 C CNN
+F 1 "GND" H 1605 2227 50  0000 C CNN
+F 2 "" H 1600 2400 50  0001 C CNN
+F 3 "" H 1600 2400 50  0001 C CNN
+	1    1600 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 2400 1600 2400
+$Comp
+L Connector:Conn_01x03_Female J5
+U 1 1 605ACEC0
+P 3450 4750
+F 0 "J5" H 3478 4730 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 3478 4685 50  0001 L CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Horizontal" H 3450 4750 50  0001 C CNN
+F 3 "~" H 3450 4750 50  0001 C CNN
+	1    3450 4750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1350 1800
+NoConn ~ 1350 1900
+NoConn ~ 1350 1100
 $EndSCHEMATC
